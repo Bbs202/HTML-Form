@@ -37,7 +37,7 @@ function insertNewRecord(data){
     cell4.innerHTML = data.city;
     cell4 = newRow.insertCell(4);
     cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
-                        <a onClick="onDelete(this)">Delete</a>`;
+                        <a style="color: red" onClick="onDelete(this)">Delete</a>`;
 }
 function resetForm(){
     document.getElementById("fullName").value = "";
